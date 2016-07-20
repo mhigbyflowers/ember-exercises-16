@@ -1,9 +1,11 @@
 <form {{action "addBookmark" on="submit"}}>
-  <label>Bookmark</label>
-  {{input class="bookmark-submit" type="text" value=bookmark}}
+  <label>Nickname</label>
+  {{input class="bookmark-submit" type="text" value=nickname}}
+  <label>URL</label>
+  {{input class="bookmark-submit" type="text" value=url}}
 <button>submit</button>
 </form>
 {{#each model as |mark|}}
-  <h3>{{mark.bookmark}}</h3>
+<a href="{{mark.url}}">{{mark.nickname}}</a><br>
 {{/each}}
 {{outlet}}

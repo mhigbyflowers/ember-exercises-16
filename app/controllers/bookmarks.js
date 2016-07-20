@@ -6,7 +6,8 @@ export default Ember.Controller.extend({
     console.log(this.bookmark);
     document.querySelector('.bookmark-submit').value='';
     const data={
-      bookmark:this.bookmark,
+      url:this.url,
+      nickname:this.nickname
     };
     return fetch('https://tiny-tn.herokuapp.com/collections/mhf-bookmarks', {
       headers: {

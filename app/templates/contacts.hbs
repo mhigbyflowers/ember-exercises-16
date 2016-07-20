@@ -10,5 +10,17 @@
 {{/if}}
 {{/each}}
 
-<button>New Contact</button>
+<button{{action "toggleContact" on="click"}} class="contact-btn">New Contact</button>
+<form  class="contact-form hidden"{{action "addPerson" on="submit"}}>
+<label>First Name</label>
+{{input type="text" value=firstName}}
+
+  <label>Last Name</label>
+{{input type="text" value=lastName}}
+  <label>Address</label>
+{{input type="text" value=address}}
+  <label>Phone Number</label>
+{{input type="text" value=phoneNumber}}
+<button>submit</button>
+</form>
 {{outlet}}
