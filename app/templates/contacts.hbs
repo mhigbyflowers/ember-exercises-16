@@ -1,0 +1,14 @@
+<hr>
+{{#each model as |person|}}
+{{log model}}
+{{#if person.first_name}}
+<p>First Name: {{person.first_name}}</p>
+<p>Last Name: {{person.last_name}}</p>
+<p>Address: {{person.address}}</p>
+<p>Phone Number: {{person.phone_number}}</p>
+<hr>
+{{/if}}
+{{/each}}
+
+<button>New Contact</button>
+{{outlet}}

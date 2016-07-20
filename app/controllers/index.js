@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
         last_name: this.lastName,
         address: this.address,
         phone_number: this.phoneNumber,
-      }
+      };
       return fetch('https://tiny-tn.herokuapp.com/collections/mhf-people', {
         headers: {
           'Content-Type': 'application/json',
