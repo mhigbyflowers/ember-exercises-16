@@ -6,12 +6,13 @@
 <p>Last Name: {{person.last_name}}</p>
 <p>Address: {{person.address}}</p>
 <p>Phone Number: {{person.phone_number}}</p>
+<button {{action "deletePerson"  on="click"}} class="delete-btn">Delete</button>
 <hr>
 {{/if}}
 {{/each}}
 
 <button{{action "toggleContact" on="click"}} class="contact-btn">New Contact</button>
-<form  class="contact-form hidden"{{action "addPerson" on="submit"}}>
+<form  class="contact-form hidden"{{action "addPerson" person on="submit"}}>
 <label>First Name</label>
 {{input type="text" value=firstName}}
 

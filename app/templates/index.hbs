@@ -1,14 +1,14 @@
-<form {{action "addPerson" on="submit"}}>
-<label>First Name</label>
-{{input type="text" value=firstName}}
+<form class="contact-form" {{action "addPerson" on="submit"}}>
+<label class="contact-form__label-fn">First Name</label>
+{{input   class="contact-form__label-fn-in" type="text" value=firstName}}
 
-  <label>Last Name</label>
-{{input type="text" value=lastName}}
-  <label>Address</label>
-{{input type="text" value=address}}
-  <label>Phone Number</label>
-{{input type="text" value=phoneNumber}}
-<button>submit</button>
+  <label class="contact-form__label-ln">Last Name</label>
+{{input class="contact-form__ln-in"  type="text" value=lastName}}
+  <label class="contact-form__label-add">Address</label>
+{{input class="contact-form__add-in" type="text" value=address}}
+  <label class="contact-form__label-pn">Phone Number</label>
+{{input class="contact-form__pn-in"type="text" value=phoneNumber}}
+<button class ="contact-form__submit-btn">submit</button>
 </form>
 
 {{outlet}}
