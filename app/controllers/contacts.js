@@ -24,6 +24,7 @@ export default Ember.Controller.extend({
         body: JSON.stringify(data)
       })
 
+
     },
 
     deletePerson(person) {

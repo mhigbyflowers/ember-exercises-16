@@ -6,7 +6,7 @@
 <p>Last Name: {{person.last_name}}</p>
 <p>Address: {{person.address}}</p>
 <p>Phone Number: {{person.phone_number}}</p>
-<button {{action "deletePerson"  on="click"}} class="delete-btn">Delete</button>
+<button {{action "deletePerson" person  on="click"}} class="delete-btn">Delete</button>
 <hr>
 {{/if}}
 {{/each}}
